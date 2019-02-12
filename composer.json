@@ -1,6 +1,6 @@
 {
-    "name": "bpocallaghan/sluggable",
-    "description": "Provides a HasSlug trait that will generate a unique slug when saving your Laravel Eloquent model.",
+    "name": "zymawy/arabify",
+    "description": ":closed_lock_with_key: A Wrapper Sluggable Traits, To Deal With Arabic Langauge",
     "keywords": [
         "laravel",
         "arabic slug",

@@ -20,7 +20,7 @@ composer require zymawy/arabify
 You may want to change the function you can do change it from the config
 
 ```bash
-    php artisan vendor:publish --provider="Zymawy\Arabify\ArabifyServiceProvider"
+php artisan vendor:publish --provider="Zymawy\Arabify\ArabifyServiceProvider"
 ```
 
 ## Usage
