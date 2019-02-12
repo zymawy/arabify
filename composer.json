@@ -9,27 +9,41 @@
         "eloquent",
         "unique"
     ],
+    "homepage": "https://github.com/zymawy/arabify",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Ben-Piet O'Callaghan",
-            "email": "bpocallaghan@gmail.com",
-            "homepage": "http://bpocallaghan.co.za",
-            "role": "Developer"
-        },
         {
             "name": "Hamza Zymawy",
             "email": "zymawy@gmail.com",
             "homepage": "http://zymawy.com",
             "role": "Developer"
+        },
+        {
+            "name": "Ben-Piet O'Callaghan",
+            "email": "bpocallaghan@gmail.com",
+            "homepage": "http://bpocallaghan.co.za",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=5.6.4"
+        "php": ">=5.6.4",
+        "illuminate/support": "5.6.*|5.7.*|5.8.*"
     },
     "autoload": {
         "psr-4": {
             "Zymawy\\Arabify\\": "src/"
         }
-    }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zymawy\\Arabify\\ArabifyServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
