@@ -104,12 +104,12 @@ trait HasSlug
     {
         $slug = $this->getSlugSourceString();
         // Given We Have Function From Config
-        $slugger = config('arabify.slug');
+//        $slugger = config('arabify.slug');
 
         // If We Don't Have It Use The Arabify
-        $slugger = $slugger ?: 'arabify';
+//        $slugger = $slugger ?: 'arabify';
 
-        return call_user_func($slugger,$slug, $this->slugOptions->slugSeparator);
+        return $this->arabify($slug, $this->slugOptions->slugSeparator);
     }
 
     /**
@@ -206,5 +206,25 @@ trait HasSlug
 
         // unique slug needed
         return false;
+    }
+
+    protected function arabify($title = null, $separator = "-")
+    {
+        $title = trim($title);
+        $title = mb_strtolower($title, 'UTF-8');
+
+        $title = str_replace('‌', $separator, $title);
+
+        $title = preg_replace(
+            '/[^a-z0-9_\s\-اآؤئبپتثجچحخدذرزژسشصضطظعغفقكکگلمنوةيإأۀءهی۰۱۲۳۴۵۶۷۸۹٠١٢٣٤٥٦٧٨٩]/u',
+            '',
+            $title
+        );
+
+        $title = preg_replace('/[\s\-_]+/', ' ', $title);
+        $title = preg_replace('/[\s_]/', $separator, $title);
+        $title = trim($title, $separator);
+
+        return $title;
     }
 }

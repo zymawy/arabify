@@ -16,12 +16,12 @@ class ArabifyServiceProvider extends  ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
-
-            $this->publishes([
-                __DIR__.'/../config/arabify.php' => config_path('arabify.php'),
-            ], 'config');
-        }
+//        if ($this->app->runningInConsole()) {
+//
+//            $this->publishes([
+//                __DIR__.'/../config/arabify.php' => config_path('arabify.php'),
+//            ], 'config');
+//        }
     }
 
     /**
