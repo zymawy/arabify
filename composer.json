@@ -1,49 +1,49 @@
 {
-    "name": "zymawy/arabify",
-    "description": ":closed_lock_with_key: A Wrapper Sluggable Traits, To Deal With Arabic Langauge",
-    "keywords": [
-        "laravel",
-        "arabic slug",
-        "arabify",
-        "slug",
-        "eloquent",
-        "unique"
-    ],
-    "homepage": "https://github.com/zymawy/arabify",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Hamza Zymawy",
-            "email": "zymawy@gmail.com",
-            "homepage": "http://zymawy.com",
-            "role": "Developer"
-        },
-        {
-            "name": "Ben-Piet O'Callaghan",
-            "email": "bpocallaghan@gmail.com",
-            "homepage": "http://bpocallaghan.co.za",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": ">=5.6.4",
-        "illuminate/support": "^8.15.0"
+  "name": "zymawy/arabify",
+  "description": ":closed_lock_with_key: A Wrapper Sluggable Traits, To Deal With Arabic Langauge",
+  "keywords": [
+    "laravel",
+    "arabic slug",
+    "arabify",
+    "slug",
+    "eloquent",
+    "unique"
+  ],
+  "homepage": "https://github.com/zymawy/arabify",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Hamza Zymawy",
+      "email": "zymawy@gmail.com",
+      "homepage": "http://zymawy.com",
+      "role": "Developer"
     },
-    "autoload": {
-        "psr-4": {
-            "Zymawy\\Arabify\\": "src/"
-        }
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Zymawy\\Arabify\\ArabifyServiceProvider"
-            ]
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    {
+      "name": "Ben-Piet O'Callaghan",
+      "email": "bpocallaghan@gmail.com",
+      "homepage": "http://bpocallaghan.co.za",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": "^8.15.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zymawy\\Arabify\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zymawy\\Arabify\\ArabifyServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
